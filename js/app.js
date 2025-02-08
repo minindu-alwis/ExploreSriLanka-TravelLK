@@ -25,40 +25,52 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
-
-// nav bar end
-
-
-
-
 const parallax_el = document.querySelectorAll(".parallax");
 
 let xValue = 0, yValue = 0;
+const isMobile = /Mobi|Android/i.test(navigator.userAgent);
 
-window.addEventListener("mousemove", (e) => {
-
-    xValue = e.clientX - window.innerWidth / 2;
-    yValue = e.clientY - window.innerHeight / 2;
-    rotateDegree = (xValue / (window.innerWidth / 2)) * 20;
+function applyParallax() {
+    let rotateDegree = (xValue / (window.innerWidth / 2)) * 20;
 
     parallax_el.forEach(el => {
         let speedx = parseFloat(el.dataset.speedx) || 0;
         let speedy = parseFloat(el.dataset.speedy) || 0;
         let speedz = parseFloat(el.dataset.speedz) || 0;
         let rotateSpeed = parseFloat(el.dataset.rotation) || 0;
-        
 
-
-
-        let isInLeft = parseFloat(getComputedStyle(el).left) < window.innerWidth / 2 ? 1 : -1;
-        let zValue = (e.clientX - parseFloat(getComputedStyle(el).left)) * isInLeft * 0.1;
-
-        el.style.transform = `translate(calc(-50% + ${xValue * speedx}px), calc(-50% + ${yValue * speedy}px)) 
-                              perspective(2300px) translateZ(${zValue * speedz}px) rotateY(${rotateDegree * rotateSpeed}deg)`;
+        el.style.transform = `translate(calc(-50% + ${xValue * speedx}px), calc(-50% + ${yValue * speedy}px))
+                              perspective(2300px) translateZ(${speedz * 20}px) 
+                              rotateY(${rotateDegree * rotateSpeed}deg)`;
     });
-});
+}
+
+if (!isMobile) {
+    window.addEventListener("mousemove", (e) => {
+        xValue = e.clientX - window.innerWidth / 2;
+        yValue = e.clientY - window.innerHeight / 2;
+        applyParallax();
+    });
+}
+
+if (isMobile) {
+    window.addEventListener("deviceorientation", (e) => {
+        if (e.beta !== null && e.gamma !== null) {
+            xValue = e.gamma * 10;
+            yValue = e.beta * 10;
+            applyParallax();
+        }
+    });
+
+    window.addEventListener("touchmove", (e) => {
+        let touch = e.touches[0];
+        xValue = touch.clientX - window.innerWidth / 2;
+        yValue = touch.clientY - window.innerHeight / 2;
+        applyParallax();
+    });
+}
+
+
 
 
 function startAnimation() {
