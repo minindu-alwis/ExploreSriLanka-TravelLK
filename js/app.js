@@ -67,7 +67,6 @@ if (isMobile) {
     });
 }
 
-
 function startAnimation() {
     let timeline = gsap.timeline();
 
@@ -107,3 +106,48 @@ function startAnimation() {
 }
 
 startAnimation();
+
+setInterval(() => {
+    gsap.killTweensOf("*");
+    startAnimation();
+}, 30000);
+
+
+
+const images = [
+    "img/sigiri.jpg",
+    "img/train.jpg",
+    "img/water.jpg",
+    "img/beach.jpg"
+];
+
+const imageContainer = document.querySelector(".image-content");
+let currentIndex = 0;
+
+// Function to update the image (only one image at a time)
+function updateImage() {
+    imageContainer.innerHTML = ""; // Clear previous images
+
+    const img = document.createElement("img");
+    img.src = images[currentIndex];
+    img.classList.add("slideshow-img", "active");
+    imageContainer.appendChild(img);
+}
+
+// Function to change image every 5 seconds
+function changeImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateImage();
+}
+
+// Run image update on page load
+updateImage();
+
+// Change image every 5 seconds
+setInterval(changeImage, 5000);
+
+
+
+
+
+

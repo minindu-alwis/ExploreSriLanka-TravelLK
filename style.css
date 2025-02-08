@@ -567,3 +567,179 @@ main{
     transform: scale(0.95);
     box-shadow: 0px 4px 15px rgba(255, 107, 107, 0.4);
 }
+
+
+/* 
+destination */
+.destinations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    background: #f9f9f9;
+}
+
+.destinations .container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    gap: 60px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h2 {
+    font-size: 3em;
+    color: #333;
+}
+
+.text-content p {
+    font-size: 1.4em;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.text-content button {
+    background: #ff6600;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.text-content button:hover {
+    background: #cc5500;
+}
+
+/* 🔹 FIXED IMAGE SLIDESHOW */
+.image-content {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.slideshow-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slideshow-img.active {
+    opacity: 1;
+}
+
+/* 📌 Responsive Fixes */
+@media (max-width: 900px) {
+    .destinations {
+        padding: 80px 20px;
+    }
+
+    .destinations .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-content {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .slideshow-img {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    .text-content h2 {
+        font-size: 2.5em;
+    }
+
+    .text-content p {
+        font-size: 1.2em;
+    }
+}
+
+/* 📌 Medium Screens (725px) */
+@media (max-width: 725px) {
+    .destinations {
+        padding: 70px 20px;
+    }
+
+    .text-content h2 {
+        font-size: 2.3em;
+    }
+
+    .text-content p {
+        font-size: 1.1em;
+    }
+
+    .image-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .slideshow-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* 📌 Small Screens (600px) */
+@media (max-width: 600px) {
+    .destinations {
+        padding: 60px 15px;
+    }
+
+    .text-content h2 {
+        font-size: 2em;
+    }
+
+    .text-content p {
+        font-size: 1em;
+    }
+
+    .image-content {
+        flex-direction: column;
+    }
+}
+
+/* 📌 Extra Small Screens (525px) */
+@media (max-width: 525px) {
+    .destinations {
+        padding: 50px 10px;
+    }
+
+    .text-content h2 {
+        font-size: 1.8em;
+    }
+
+    .text-content p {
+        font-size: 0.95em;
+    }
+
+    .image-content {
+        flex-direction: column;
+    }
+}
