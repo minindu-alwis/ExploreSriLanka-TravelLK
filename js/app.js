@@ -23,12 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
-const parallax_el = document.querySelectorAll(".parallax");
-
-let xValue = 0, yValue = 0;
+const parallax_el = document.querySelectorAll(".parallax:not(.no-parallax)"); 
 const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+let xValue = 0, yValue = 0;
 
 function applyParallax() {
     let rotateDegree = (xValue / (window.innerWidth / 2)) * 20;
@@ -73,6 +70,8 @@ if (isMobile) {
 
 
 
+
+
 function startAnimation() {
     let timeline = gsap.timeline();
 
@@ -104,4 +103,4 @@ startAnimation();
 
 setInterval(() => {
     startAnimation();
-}, 20000);
+}, 30000);
