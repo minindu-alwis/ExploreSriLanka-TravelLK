@@ -276,16 +276,19 @@ main{
     pointer-events: auti;
 }
 
-.text h2{
+.text h2 {
     font-weight: 100;
     font-size: 4.5rem;
 }
 
-.text h1{
+.text h1 {
     font-weight: 800;
     font-size: 8rem;
-    line-height: 0.8;
+    line-height: 1; /* Adjusted to give natural spacing */
+    letter-spacing: 5px; /* Adds space between letters in 'Sri Lanka' */
 }
+
+/* button and texts are end */
 
 .mountain-6 {
     position: absolute;
@@ -521,4 +524,46 @@ main{
         color: #34495e;
         border-bottom: 2px solid #3498db;
     }
+}
+
+
+
+
+
+/* button in middel */
+.button {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    padding: 14px 28px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 8px 20px rgba(255, 126, 95, 0.5);
+    margin-top: 20px;
+}
+
+.button span {
+    position: relative;
+    z-index: 2;
+}
+
+/* 🔥 Hover Effect (Now Works Perfectly) */
+.button:hover {
+    background: linear-gradient(135deg, #ff6b6b, #ffa502);
+    box-shadow: 0px 12px 30px rgba(255, 107, 107, 0.7);
+    transform: translateY(-4px) scale(1.05);
+}
+
+/* 🔥 Click Effect */
+.button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 4px 15px rgba(255, 107, 107, 0.4);
 }

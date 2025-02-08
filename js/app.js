@@ -68,10 +68,6 @@ if (isMobile) {
 }
 
 
-
-
-
-
 function startAnimation() {
     let timeline = gsap.timeline();
 
@@ -89,18 +85,25 @@ function startAnimation() {
             );
         });
 
-    timeline.from(".text h1", {
-        y: window.innerHeight - document.querySelector(".text h1").getBoundingClientRect().top,
-        duration: 2,
-    }, "2.5").from(".text h2", {
-        y: -150,
-        opacity: 0,
-        duration: 1.5,
-    }, "3");
+    timeline
+        .from(".text h1", {
+            y: window.innerHeight - document.querySelector(".text h1").getBoundingClientRect().top,
+            duration: 2,
+            ease: "power3.out"
+        }, "2.5")
+        .from(".text h2", {
+            y: -150,
+            opacity: 0,
+            duration: 1.5,
+            ease: "power3.out"
+        }, "3")
+        .from(".button", {
+            scale: 0,
+            opacity: 0,
+            duration: 1.5,
+            ease: "elastic.out(1, 0.5)"
+        }, "3.5")
+        .set(".button", { clearProps: "all" }); 
 }
 
 startAnimation();
-
-setInterval(() => {
-    startAnimation();
-}, 30000);
