@@ -1215,3 +1215,26 @@ destination */
     transform: scale(1.05);
   }
   
+
+  .museum-card h3 {
+    font-size: 1.5rem; /* Default font size for larger screens */
+    text-align: center; /* Center the heading for better alignment */
+  }
+  
+  @media (max-width: 1024px) {
+    .museum-card h3 {
+      font-size: 1.25rem; /* Slightly smaller for medium-sized screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .museum-card h3 {
+      font-size: 1.1rem; /* Smaller for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .museum-card h3 {
+      font-size: 1rem; /* Even smaller for mobile devices */
+    }
+  }
