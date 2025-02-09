@@ -231,24 +231,46 @@ document.addEventListener('DOMContentLoaded', animateBotImage);
 
 
 
-// Shopping Mall image animation with GSAP (Pulse Effect)
+// Shopping Mall image animation with GSAP
 function animateMallImage() {
     gsap.from(".mall-image img", {
         opacity: 0,
+        y: 50,
         scale: 0.8,  // Start with a scaled-down image
         duration: 1.5,
         ease: "power3.out"
     });
 
     gsap.to(".mall-image img", {
-        scale: 1.05,  // Slightly scale up
+        y: 10,
+        scale: 1.05,  // Slight zoom in effect
         repeat: -1,
-        yoyo: true,  // Pulse in and out smoothly
-        duration: 1.5,  // Pulse speed
+        yoyo: true,
+        duration: 2,
         ease: "power1.inOut"
     });
 }
 
 // Trigger the animation when the document is loaded
 document.addEventListener('DOMContentLoaded', animateMallImage);
-  
+
+
+
+function animateFooterHeadings() {
+    function shakeEffect() {
+        gsap.to(".footer-section h3", {
+            x: 5, // Slight movement to the right
+            repeat: 3, // Shake 3 times
+            yoyo: true,
+            duration: 0.3, // Slow shaking effect
+            ease: "power1.inOut",
+            onComplete: () => {
+                setTimeout(shakeEffect, 3000); // Wait 5 seconds before shaking again
+            }
+        });
+    }
+    shakeEffect(); // Start the shaking effect
+}
+
+// Trigger the animation when the document is loaded
+document.addEventListener('DOMContentLoaded', animateFooterHeadings);
