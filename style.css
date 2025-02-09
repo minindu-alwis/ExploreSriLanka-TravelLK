@@ -1238,3 +1238,130 @@ destination */
       font-size: 1rem; /* Even smaller for mobile devices */
     }
   }
+
+
+
+
+  /* bot section */
+
+  .ai-bot {
+    background-color: #fff;
+    color: #333; /* Darker text for readability */
+    text-align: center;
+    padding: 80px 20px;
+    width: 100%;
+}
+
+.ai-bot .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ai-bot h2 {
+    font-size: 2rem;
+    color: #222; /* Slightly darker for contrast */
+    margin-bottom: 15px;
+}
+
+.ai-bot p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.bot-image img {
+    max-width: 180px;
+    margin: 20px 0;
+}
+
+.center-button {
+    margin-top: 20px;
+}
+
+.button-big {
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background 0.3s;
+}
+
+.button-big:hover {
+    transform: scale(1.1);
+    background: magenta; 
+}
+
+
+
+/* shoppingmall */
+/* Shopping Mall Section */
+.shopping-malls {
+    background-color: #f4f4f4; /* Soft background color */
+    padding: 80px 0; /* Padding to give the section some space */
+}
+
+.shopping-malls .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.shopping-malls .text-content {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.shopping-malls .text-content h2 {
+    font-size: 2.5em;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.shopping-malls .text-content p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.mall-image {
+    margin-bottom: 40px;
+    text-align: center; /* Center the image */
+}
+
+.mall-image img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners for the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
+}
+
+.center-button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.center-button a {
+    text-decoration: none; /* Remove the underline from the link */
+}
+
+.center-button .button-big {
+    color: white;
+    padding: 18px 40px;
+    font-size: 1.0em;
+    font-weight: bold;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.2s;
+    border: none;
+}
+
+.center-button .button-big:hover {
+    transform: scale(1.05);
+    background: #FF4081; /* Soft hover effect with pink */
+}

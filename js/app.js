@@ -203,3 +203,52 @@ function initCardAnimation(cardId) {
     initCardAnimation('card-2');
     initCardAnimation('card-3');
   });
+
+
+
+
+//   chatbot animation
+
+
+function animateBotImage() {
+    gsap.from(".bot-image img", {
+        opacity: 0,
+        y: 50,
+        duration: 1.5,
+        ease: "power3.out"
+    });
+
+    gsap.to(".bot-image img", {
+        y: 10,
+        repeat: -1,
+        yoyo: true,
+        duration: 2,
+        ease: "power1.inOut"
+    });
+}
+
+document.addEventListener('DOMContentLoaded', animateBotImage);
+
+
+
+// Shopping Mall image animation with GSAP (Pulse Effect)
+function animateMallImage() {
+    gsap.from(".mall-image img", {
+        opacity: 0,
+        scale: 0.8,  // Start with a scaled-down image
+        duration: 1.5,
+        ease: "power3.out"
+    });
+
+    gsap.to(".mall-image img", {
+        scale: 1.05,  // Slightly scale up
+        repeat: -1,
+        yoyo: true,  // Pulse in and out smoothly
+        duration: 1.5,  // Pulse speed
+        ease: "power1.inOut"
+    });
+}
+
+// Trigger the animation when the document is loaded
+document.addEventListener('DOMContentLoaded', animateMallImage);
+  
