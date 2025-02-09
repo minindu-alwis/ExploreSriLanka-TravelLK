@@ -645,6 +645,25 @@ destination */
     opacity: 1;
 }
 
+@keyframes zoomInOut {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.image-content {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content img {
+    width: 100%;
+    animation: zoomInOut 5s infinite ease-in-out; /* Smooth infinite animation */
+    transform-origin: center;
+}
+
 /* 📌 Responsive Fixes */
 @media (max-width: 900px) {
     .destinations {
@@ -743,3 +762,456 @@ destination */
         flex-direction: column;
     }
 }
+
+
+
+
+/* hotel section */
+
+
+
+/* 🌍 Hotels Section */
+.hotels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    background: #fff;
+}
+
+.hotels .container {
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* 📝 Text Content */
+.hotels .text-content h2 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.hotels .text-content p {
+    font-size: 1.4em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* 📌 Hotel Grid */
+.hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    width: 100%;
+}
+
+/* 🏨 Hotel Cards */
+.hotel-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hotel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 🖼 Hotel Image */
+.hotel-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* 🏨 Hotel Info */
+.hotel-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.hotel-info h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hotel-info p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* 🔘 Button */
+.hotel-info button {
+    background: #ff6600;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hotel-info button:hover {
+    background: #cc5500;
+}
+
+/* 📌 Responsive Design */
+@media (max-width: 900px) {
+    .hotels {
+        padding: 80px 20px;
+    }
+    
+    .hotels .text-content h2 {
+        font-size: 2.5em;
+    }
+
+    .hotels .text-content p {
+        font-size: 1.2em;
+    }
+    
+    .hotel-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .hotels {
+        padding: 60px 15px;
+    }
+
+    .hotels .text-content h2 {
+        font-size: 2.2em;
+    }
+
+    .hotels .text-content p {
+        font-size: 1.1em;
+    }
+
+    .hotel-info h3 {
+        font-size: 1.6em;
+    }
+
+    .hotel-info p {
+        font-size: 1.1em;
+    }
+}
+.center-button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+.button-big {
+    --h-button: 60px;  /* Increase button height */
+    --w-button: 140px; /* Increase button width */
+    --round: 1rem;     /* Adjust border radius for a larger button */
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.25s ease;
+    background: radial-gradient(
+        65.28% 65.28% at 50% 100%,
+        rgba(223, 113, 255, 0.8) 0%,
+        rgba(223, 113, 255, 0) 100%
+      ),
+      linear-gradient(0deg, #7a5af8, #7a5af8);
+    border-radius: var(--round);
+    border: none;
+    outline: none;
+    padding: 15px 30px; /* Increase padding */
+    font-size: 1.2em;   /* Larger text */
+}
+.button-big::before,
+.button-big::after {
+    content: "";
+    position: absolute;
+    inset: var(--space);
+    transition: all 0.5s ease-in-out;
+    border-radius: calc(var(--round) - var(--space));
+    z-index: 0;
+}
+.button-big::before {
+    --space: 1px;
+    background: linear-gradient(
+      177.95deg,
+      rgba(255, 255, 255, 0.19) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+}
+.button-big::after {
+    --space: 2px;
+    background: radial-gradient(
+        65.28% 65.28% at 50% 100%,
+        rgba(223, 113, 255, 0.8) 0%,
+        rgba(223, 113, 255, 0) 100%
+      ),
+      linear-gradient(0deg, #7a5af8, #7a5af8);
+}
+.button-big:active {
+    transform: scale(0.95);
+}
+
+.fold {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1.2rem;  /* Slightly larger fold */
+    width: 1.2rem;
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+    background: radial-gradient(
+      100% 75% at 55%,
+      rgba(223, 113, 255, 0.8) 0%,
+      rgba(223, 113, 255, 0) 100%
+    );
+    box-shadow: 0 0 3px black;
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: var(--round);
+}
+.fold::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150%;
+    height: 150%;
+    transform: rotate(45deg) translateX(0%) translateY(-18px);
+    background-color: #e8e8e8;
+    pointer-events: none;
+}
+.button-big:hover .fold {
+    margin-top: -1.2rem;
+    margin-right: -1.2rem;
+}
+
+.points_wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.points_wrapper .point {
+    bottom: -10px;
+    position: absolute;
+    animation: floating-points infinite ease-in-out;
+    pointer-events: none;
+    width: 2.5px;   /* Slightly larger points */
+    height: 2.5px;
+    background-color: #fff;
+    border-radius: 9999px;
+}
+@keyframes floating-points {
+    0% {
+        transform: translateY(0);
+    }
+    85% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-55px);
+        opacity: 0;
+    }
+}
+.points_wrapper .point:nth-child(1) {
+    left: 10%;
+    opacity: 1;
+    animation-duration: 2.35s;
+    animation-delay: 0.2s;
+}
+.points_wrapper .point:nth-child(2) {
+    left: 30%;
+    opacity: 0.7;
+    animation-duration: 2.5s;
+    animation-delay: 0.5s;
+}
+.points_wrapper .point:nth-child(3) {
+    left: 25%;
+    opacity: 0.8;
+    animation-duration: 2.2s;
+    animation-delay: 0.1s;
+}
+.points_wrapper .point:nth-child(4) {
+    left: 44%;
+    opacity: 0.6;
+    animation-duration: 2.05s;
+}
+.points_wrapper .point:nth-child(5) {
+    left: 50%;
+    opacity: 1;
+    animation-duration: 1.9s;
+}
+.points_wrapper .point:nth-child(6) {
+    left: 75%;
+    opacity: 0.5;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+}
+.points_wrapper .point:nth-child(7) {
+    left: 88%;
+    opacity: 0.9;
+    animation-duration: 2.2s;
+    animation-delay: 0.2s;
+}
+.points_wrapper .point:nth-child(8) {
+    left: 58%;
+    opacity: 0.8;
+    animation-duration: 2.25s;
+    animation-delay: 0.2s;
+}
+.points_wrapper .point:nth-child(9) {
+    left: 98%;
+    opacity: 0.6;
+    animation-duration: 2.6s;
+    animation-delay: 0.1s;
+}
+.points_wrapper .point:nth-child(10) {
+    left: 65%;
+    opacity: 1;
+    animation-duration: 2.5s;
+    animation-delay: 0.2s;
+}
+
+/* Inner Button Text & Icon */
+.inner {
+    z-index: 2;
+    gap: 6px;
+    position: relative;
+    width: 100%;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;  /* Increase font size */
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.inner svg.icon {
+    width: 22px;   /* Larger icon */
+    height: 22px;
+}
+
+.button-big:hover svg.icon {
+    fill: transparent;
+}
+
+
+
+
+
+
+/* msium css */
+
+
+
+
+.museum {
+    background-color: #f4f4f4;
+    padding: 60px 0;
+  }
+  
+  .museum .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .museum .text-content {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .museum .text-content h2 {
+    font-size: 2.5em;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .museum .text-content p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .museum-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .museum-card {
+    flex: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .museum-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .museum-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .museum-info {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+  }
+  
+  .museum-info h3 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .museum-info p {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  .center-button {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .center-button a {
+    text-decoration: none;
+  }
+  
+  .center-button .button-big {
+    color: white;
+    padding: 18px 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.2s;
+    border: none; /* Remove any border */
+  }
+  
+  .center-button .button-big:hover {
+    transform: scale(1.05);
+  }
+  

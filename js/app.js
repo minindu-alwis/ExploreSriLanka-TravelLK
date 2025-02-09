@@ -151,3 +151,55 @@ setInterval(changeImage, 5000);
 
 
 
+
+
+// musium 3js
+// Function to add GSAP hover effects for each card
+function initCardAnimation(cardId) {
+    const card = document.getElementById(cardId);
+    const info = card.querySelector('.museum-info');
+    
+    // Hover effect - GSAP animation
+    card.addEventListener('mouseenter', () => {
+      gsap.to(card, { 
+        scale: 1.1,          // Scale up the card
+        rotationY: 10,       // Slightly rotate the card for a 3D effect
+        duration: 0.5,       // Duration of the animation
+        ease: "power2.out"   // Easing for smooth animation
+      });
+  
+      gsap.to(info, { 
+        opacity: 1,          // Ensure text stays visible
+        y: -20,              // Move text up a bit for better effect
+        duration: 0.3,       // Duration for fade-in effect
+        ease: "power2.out"   // Easing for smooth animation
+      });
+  
+      card.style.zIndex = "10";  // Bring the hovered card to the front
+    });
+  
+    card.addEventListener('mouseleave', () => {
+      gsap.to(card, { 
+        scale: 1,            // Reset the scale
+        rotationY: 0,        // Reset the rotation
+        duration: 0.5,       // Duration of the reset animation
+        ease: "power2.out"   // Easing for smooth reset
+      });
+  
+      gsap.to(info, { 
+        opacity: 1,          // Ensure text stays visible after leaving
+        y: 0,                // Reset text position
+        duration: 0.3,       // Duration for fade-in effect
+        ease: "power2.out"   // Easing for smooth fade-in
+      });
+  
+      card.style.zIndex = "1";  // Reset the z-index
+    });
+  }
+  
+  // Initialize GSAP animation for each card
+  document.addEventListener('DOMContentLoaded', function () {
+    initCardAnimation('card-1');
+    initCardAnimation('card-2');
+    initCardAnimation('card-3');
+  });
