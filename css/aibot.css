@@ -1,0 +1,191 @@
+
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #333;
+}
+
+.ai-welcome {
+    color: white;
+    text-align: center;
+    height: 100vh; /* Makes it full-screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden; /* Ensures the video fits within the section */
+}
+
+.ai-welcome .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 1;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire section */
+    z-index: 0; /* Makes sure the video is behind the content */
+}
+
+.ai-content {
+    max-width: 700px;
+    margin: auto;
+    position: relative;
+    z-index: 2; /* Ensures content appears above the overlay and video */
+}
+
+.ai-content h1 {
+    font-size: 3rem; /* Bigger size for emphasis */
+    font-weight: bold;
+    color: white; /* Pure white text */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Black shadow for depth */
+}
+
+.ai-content p {
+    font-size: 1.4rem; 
+    margin: 15px 0;
+    color: white; 
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7); 
+}
+
+.chat-start {
+    display: inline-block;
+    background: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.chat-start:hover {
+    background: #ff4500;
+}
+
+
+
+
+
+
+.ai-bot {
+    background-color: #fff;
+    color: #333; /* Darker text for readability */
+    text-align: center;
+    padding: 80px 20px;
+    width: 100%;
+}
+
+.ai-bot .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ai-bot h2 {
+    font-size: 2rem;
+    color: #222; /* Slightly darker for contrast */
+    margin-bottom: 15px;
+}
+
+.ai-bot p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.bot-image img {
+    max-width: 180px;
+    margin: 20px 0;
+}
+
+.center-button {
+    margin-top: 20px;
+}
+
+
+/* //chat section */
+
+
+/* 
+btn */
+
+
+/* From Uiverse.io by AlimurtuzaCodes */
+.btn {
+    border: none;
+    width: 15em;
+    height: 5em;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #ff0000;
+    cursor: pointer;
+    transition: all 450ms ease-in-out;
+    text-align: center;
+}
+
+/* Sparkle effect for the icon */
+.sparkle {
+    fill: #AAAAAA;
+    transition: all 800ms ease;
+}
+
+/* Text styling */
+.text {
+    font-weight: 600;
+    color: #AAAAAA;
+    font-size: medium;
+}
+
+/* Hover effects */
+.btn:hover {
+    background: linear-gradient(0deg, #A47CF3, #683FEA);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+                inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+                0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+                0px 0px 180px 0px #9917FF;
+    transform: translateY(-2px);
+}
+
+.btn:hover .text {
+    color: white;
+}
+
+.btn:hover .sparkle {
+    fill: white;
+    transform: scale(1.2);
+}
+
+/* Center the button within the parent container */
+.ai-content {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100vh;           /* Full height */
+    text-align: center;      /* Center text within the ai-content */
+    flex-direction: column;  /* Stack the elements vertically */
+    padding: 20px;
+}
+
+.ai-content h1,
+.ai-content p {
+    margin-bottom: 20px;
+}
