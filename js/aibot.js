@@ -150,51 +150,74 @@ function renderMessages() {
     chat.scrollTop = chat.scrollHeight;
 }
 
-function aibot(){
-  const myHeaders = new Headers();
-  myHeaders.append("Content-Type", "application/json");
-  let usermsgg = document.getElementById("userinput").value;
-  const raw = JSON.stringify({
-    "contents": [
-      {
-        "parts": [
-          {
-            "text": usermsgg
-          }
-        ]
-      }
-    ]
-  });
+let isFirstTime = true;  // Flag to check if it's the first time
 
-  console.log(raw);
-  
-  const requestOptions = {
-    method: "POST",
-    headers: myHeaders,
-    body: raw,
-  };
-  
-  fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyC-Qp2CZsOZQYKYZ30Wyq1leFGB26FStew", requestOptions)
-    .then((response) => response.json())
-    .then((result) => {
-        console.log(result); // Inspect the API response structure
-        
-        const messageContent = result?.candidates?.[0]?.content?.parts?.[0]?.text;
-
-        if (messageContent) {
-            mainarray.push({
-                sender: "sender2",
-                message: md.render(messageContent)
-            });
-        } else {
-            console.error("Message content is undefined");
-        }
-        console.log(mainarray);
-        renderMessages();
-    })
-    .catch((error) => console.error("Error fetching data:", error));
-   
+// New function to handle the first-time logic
+function getFormattedMessage(usermsgg) {
+  if (isFirstTime) {
+    isFirstTime = false;  // Change flag after the first message
+    return usermsgg + " give response like travel chat bot";
+  } else {
+    return usermsgg;  // For subsequent messages, just return the user's input
+  }
 }
-
-
-
+function aibot() {
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+  
+    // Get the user's input message
+    let usermsgg = document.getElementById("userinput").value;
+  
+    // Send the user input with the phrase "give response like travel chatbot" once
+    const raw = JSON.stringify({
+      "contents": [
+        {
+          "parts": [
+            {
+              "text": usermsgg + " give response like travel chatbot"
+            }
+          ]
+        }
+      ]
+    });
+  
+    console.log(raw);  // Log the raw data for debugging
+    
+    // Prepare request options for the API call
+    const requestOptions = {
+      method: "POST",
+      headers: myHeaders,
+      body: raw,
+    };
+  
+    // Call the API to generate a response
+    fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyC-Qp2CZsOZQYKYZ30Wyq1leFGB26FStew", requestOptions)
+      .then((response) => response.json())
+      .then((result) => {
+          console.log(result); // Log the API response for debugging
+          
+          // Extract the message content from the API response
+          const messageContent = result?.candidates?.[0]?.content?.parts?.[0]?.text;
+  
+          if (messageContent) {
+              // Push the bot's response to the message array
+              mainarray.push({
+                  sender: "sender2",
+                  message: md.render(messageContent) // Assuming you use markdown rendering
+              });
+          } else {
+              console.error("Message content is undefined");
+          }
+  
+          // Log the array for debugging
+          console.log(mainarray);
+  
+          // Render the messages (assumes you have a renderMessages function)
+          renderMessages();
+      })
+      .catch((error) => {
+          // Handle errors from the API call
+          console.error("Error fetching data:", error);
+      });
+  }
+  
