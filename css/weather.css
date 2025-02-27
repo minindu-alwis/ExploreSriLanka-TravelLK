@@ -179,6 +179,5 @@ button:hover::before {
 @media (max-width: 576px) {
     button {
         font-size: 1.1rem;
-        padding: 0.9rem 2rem;
     }
 }
