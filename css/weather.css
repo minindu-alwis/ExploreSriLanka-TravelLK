@@ -101,25 +101,31 @@ button {
     box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
     font-weight: bold;
     letter-spacing: 1px;
+    text-transform: uppercase;
     position: relative;
     overflow: hidden;
-    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-/* Hover Effect */
+button i {
+    font-size: 1.3rem;
+    transition: transform 0.3s ease-in-out;
+}
+
 button:hover {
     background: linear-gradient(135deg, #0056b3, #003b82);
     box-shadow: 0 8px 25px rgba(0, 123, 255, 0.6);
     transform: scale(1.05);
 }
 
-/* Pressed Effect */
 button:active {
     transform: scale(0.98);
     box-shadow: 0 4px 10px rgba(0, 123, 255, 0.5);
 }
 
-/* Glowing Effect */
 button::before {
     content: "";
     position: absolute;
@@ -134,6 +140,32 @@ button::before {
 
 button:hover::before {
     transform: translate(-50%, -50%) scale(1);
+}
+
+button:hover i {
+    transform: rotate(360deg);
+}
+
+@media (max-width: 768px) {
+    button {
+        font-size: 1.2rem;
+        padding: 0.9rem 2.5rem;
+    }
+
+    button i {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    button {
+        font-size: 1.1rem;
+        padding: 0.8rem 2rem;
+    }
+
+    button i {
+        font-size: 1rem;
+    }
 }
 
 
@@ -176,8 +208,3 @@ button:hover::before {
     }
 }
 
-@media (max-width: 576px) {
-    button {
-        font-size: 1.1rem;
-    }
-}
