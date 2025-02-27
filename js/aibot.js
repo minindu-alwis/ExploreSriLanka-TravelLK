@@ -168,7 +168,7 @@ function aibot() {
     // Get the user's input message
     let usermsgg = document.getElementById("userinput").value;
   
-    // Send the user input with the phrase "give response like travel chatbot" once
+    
     const raw = JSON.stringify({
       "contents": [
         {
@@ -181,8 +181,8 @@ function aibot() {
       ]
     });
   
-    console.log(raw);  // Log the raw data for debugging
-    
+    console.log(raw);  
+
     // Prepare request options for the API call
     const requestOptions = {
       method: "POST",

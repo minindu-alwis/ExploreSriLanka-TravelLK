@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=\, initial-scale=1.0">
+  <title>Travel - LK 😍</title>
+  <link rel="stylesheet" href="css/aibot.css">
+  <link rel="stylesheet" href="css/headerandfooter.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="stylesheet" href="css/weather.css">
+    
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <img src="img/last final logo.png" alt="Logo" class="logo">
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aibot.html">Chat With Mira</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Hotels</a></li>
+        <li><a href="#">Shopping Malls</a></li>
+        <li><a href="#">Live Musium</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="search">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </li>
+      </ul>
+      <div class="hamburger" id="hamburger-menu">
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+
+<!-- 
+weatrther section -->
+
+<video id="background-video" autoplay muted loop>
+    <source src="1234.mp4" type="video/mp4">
+</video>
+
+
+<div class="container d-flex flex-column align-items-center justify-content-center vh-100">
+    <div class="weather_container text-center p-4 bg-white shadow rounded">
+
+        <div class="temp text-primary fw-bold">
+            <p>20°C</p>
+        </div>
+        <div class="time_location">
+            <p class="text-dark fw-semibold">Monaragala</p>
+            <p class="text-muted"> 2024-12-03 13:23 </p>
+            <p class="text-primary fw-semibold" id="day-of-week"></p>
+        </div>
+
+        <div class="condition my-3 d-flex align-items-center justify-content-center">
+            <p></p>
+            <img id="weather-icon" alt="Weather Icon" />
+            <p class="fs-5 fw-bold text-dark mb-0 ms-2">Sunny</p>
+        </div>
+
+
+    </div>
+
+    <nav class="w-100 mt-3">
+        <form class="d-flex flex-column align-items-center">
+            <input type="text" placeholder="Enter The Location" class="form-control search_area text-center mb-3">
+            <button class="btn btn-primary px-4" type="submit">Search</button>
+        </form>
+    </nav>
+
+</div>
+
+
+
+
+  
+<!-- footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Logo Section -->
+        <div class="footer-section logo-section">
+            <img src="img/last final logo.png" alt="Travel Lk Logo" class="footer-logo">
+            <p>Your gateway to unforgettable travel experiences. Explore the world with Travel Lk!</p>
+        </div>
+  
+        <!-- Quick Links Section -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">AI Assistant</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Shopping Malls</a></li>
+                <li><a href="#">Live Museum</a></li>
+            </ul>
+        </div>
+  
+        <!-- Contact Info Section -->
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <ul>
+                <li><img src="img/location.png" alt="Location Icon" class="footer-icon"> Colombo , Sri Lanka</li>
+                <li><img src="img/cll.png" alt="Phone Icon" class="footer-icon"> +94 71 1816 134</li>
+                <li><img src="img/mail.png" alt="Email Icon" class="footer-icon"> info@travellk.com</li>
+            </ul>
+        </div>
+  
+        <!-- Social Media Section -->
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#"><img src="img/fb.png" alt="Facebook" class="social-icon"></a>
+                <a href="#"><img src="img/twiter.png" alt="Twitter" class="social-icon"></a>
+                <a href="#"><img src="img/insta.png" alt="Instagram" class="social-icon"></a>
+                <a href="#"><img src="img/linkedin.png" alt="LinkedIn" class="social-icon"></a>
+                <a href="#"><img src="img/yituube.png" alt="Youtube" class="social-icon"></a>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>&copy; 2019 Travel Lk. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/markdown-it/8.2.2/markdown-it.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="js/headerandfooter.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  
+
+</body>
+</html>    
