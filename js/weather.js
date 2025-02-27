@@ -14,58 +14,72 @@ form.addEventListener("submit", searchForLocation);
 let target = "Monaragala";
 
 const fetchResult = async (targetLocation) => {
-    const url = `http://api.weatherapi.com/v1/current.json?key=0362fec199224ecaa19172531240212&q=${targetLocation}&aqi=no`;
-    const res = await fetch(url);
-    const data = await res.json();
+    try {
+        const url = `https://api.weatherapi.com/v1/current.json?key=0362fec199224ecaa19172531240212&q=${targetLocation}&aqi=no`;
+        const res = await fetch(url);
 
-    let location = data.location.name;
-    let time = data.location.localtime;
-    let temp = data.current.temp_c;
-    let condition = data.current.condition;
-    let backvi=data.current.condition.text
-    console.log(backvi)
+        if (!res.ok) {
+            throw new Error(`HTTP Error! Status: ${res.status}`);
+        }
 
-    const [datePart, timePart] = time.split(" ");
+        const data = await res.json();
 
-    tempField.textContent = `${temp}°C`;
-    locationField.textContent = location;
-    dataField.textContent = `${timePart} - ${datePart}`;
-    weatherField.textContent = condition.text;
+        let location = data.location.name;
+        let time = data.location.localtime;
+        let temp = data.current.temp_c;
+        let condition = data.current.condition;
+        let backvi = data.current.condition.text.toLowerCase();
 
-    updateWeatherIcon(condition.icon); 
-    updateBackgroundVideo(backvi);
+        console.log("Condition:", backvi);
+
+        const [datePart, timePart] = time.split(" ");
+
+        tempField.textContent = `${temp}°C`;
+        locationField.textContent = location;
+        dataField.textContent = `${timePart} - ${datePart}`;
+        weatherField.textContent = condition.text;
+
+        updateWeatherIcon(condition.icon);
+        updateBackgroundVideo(backvi);
+    } catch (error) {
+        console.error("❌ Fetch Error:", error.message);
+    }
 };
 
 function updateWeatherIcon(iconUrl) {
     if (weatherIcon) {
-        weatherIcon.src = `https:${iconUrl}`; 
-        weatherIcon.alt = "Weather Icon"; 
+        weatherIcon.src = `https:${iconUrl}`;
+        weatherIcon.alt = "Weather Icon";
     } else {
-        console.error("🙄");
+        console.error("⚠️ Weather icon element not found.");
     }
 }
 
 function searchForLocation(e) {
     e.preventDefault();
-    target = searchField.value;
-    fetchResult(target);
+    target = searchField.value.trim();
+    if (target) {
+        fetchResult(target);
+    } else {
+        console.warn("⚠️ Empty search query!");
+    }
 }
-
 
 function updateBackgroundVideo(condition) {
     const videos = {
-        Sunny: "videos/sunny.mp4",
-        Clear: "videos/sunny.mp4",
-        Rain: "videos/rain.mp4",
-        "Partly cloudy": "videos/ppc.mp4",
-        "Patchy rain nearby": "videos/rain.mp4",
-        "Light rain" : "videos/rain.mp4",
-        "Moderate or heavy rain with thunder" : "videos/rain.m4"
-
+        sunny: "videos/sunny.mp4",
+        clear: "videos/sunny.mp4",
+        rain: "videos/rain.mp4",
+        "partly cloudy": "videos/ppc.mp4",
+        "patchy rain nearby": "videos/rain.mp4",
+        "light rain": "videos/rain.mp4",
+        "moderate or heavy rain with thunder": "videos/rain.mp4",
     };
-    const videoFile = videos[condition] || "videos/default.mp4";
+
+    const matchedCondition = Object.keys(videos).find((key) => condition.includes(key)) || "default";
+    const videoFile = videos[matchedCondition] || "videos/default.mp4";
+
     backgroundVideo.src = videoFile;
 }
-
 
 fetchResult(target);
