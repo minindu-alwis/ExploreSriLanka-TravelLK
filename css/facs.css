@@ -10,10 +10,10 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
-    animation: changeBackground 15s infinite ease-in-out; /* Smooth animation */
+    animation: changeBackground 15s infinite ease-in-out; 
   }
   
-  /* Keyframes for Smooth Gradient Transition */
+  
   @keyframes changeBackground {
     0% {
       background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
@@ -72,7 +72,7 @@
     box-shadow: 0 6px 20px rgba(255, 111, 97, 0.5);
   }
   
-  /* Background Animation */
+  
   .offer-section::before {
     content: "";
     position: absolute;
@@ -95,7 +95,7 @@
     }
   }
   
-  /* Responsive Design */
+  
   @media (max-width: 768px) {
     .offer-section h2 {
       font-size: 2rem;

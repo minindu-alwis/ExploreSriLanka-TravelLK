@@ -1,0 +1,107 @@
+/* Destination Welcome Section Styling */
+.destination-welcome {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.destination-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    z-index: 1;
+}
+
+.destination-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire section */
+    z-index: 0;
+}
+
+.destination-content {
+    position: relative;
+    z-index: 2; /* Ensures content is above the overlay and background */
+    max-width: 800px;
+    padding: 20px;
+}
+
+.destination-content h1 {
+    font-size: 3rem; /* Default size for larger screens */
+    margin-bottom: 20px;
+}
+
+.destination-content p {
+    font-size: 1.2rem; /* Default size for larger screens */
+    margin-bottom: 30px;
+}
+
+.explore-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Gradient button */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem; /* Default size for larger screens */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.explore-button:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.explore-button .sparkle {
+    margin-right: 10px;
+}
+
+.explore-button .text a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .destination-content h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    .destination-content p {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+
+    .explore-button {
+        padding: 10px 20px; /* Smaller button size for mobile */
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .destination-content h1 {
+        font-size: 1.5rem; /* Even smaller font size for very small screens */
+    }
+
+    .destination-content p {
+        font-size: 0.9rem; /* Even smaller font size for very small screens */
+    }
+
+    .explore-button {
+        padding: 8px 16px; /* Even smaller button size for very small screens */
+        font-size: 0.9rem; /* Even smaller font size for very small screens */
+    }
+}
