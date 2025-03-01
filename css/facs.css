@@ -1,0 +1,148 @@
+
+  .face-detection-section {
+    background-color: #ffffff;
+    padding: 50px 20px;
+  }
+  
+  .face-detection-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .text-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .text-section p {
+    font-size: 1rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 30px;
+  }
+  
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+    margin-bottom: 30px;
+  }
+  
+  .video-preview {
+    width: 100%;
+    height: auto;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  #status-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .center-btn-wrapper {
+    margin-top: 20px;
+  }
+  
+  .start-detection-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .start-detection-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Offer Card */
+  .offer-card {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 1000;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .offer-card .card-content h2 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .offer-card .card-content p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .offer-card .close-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .offer-card .close-button:hover {
+    background-color: #e53935;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .text-section h2 {
+      font-size: 1.8rem;
+    }
+  
+    .text-section p {
+      font-size: 0.9rem;
+    }
+  
+    .video-wrapper {
+      max-width: 100%;
+    }
+  
+    .video-preview {
+      border: 3px solid #ddd;
+    }
+  
+    #status-text {
+      font-size: 1.2rem;
+    }
+  
+    .start-detection-btn {
+      padding: 12px 25px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .text-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .text-section p {
+      font-size: 0.8rem;
+    }
+  
+    .start-detection-btn {
+      padding: 10px 20px;
+      font-size: 0.8rem;
+    }
+  }
+  

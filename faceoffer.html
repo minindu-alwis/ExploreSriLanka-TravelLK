@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Face & Emotion Detection</title>
+  
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/faceoffer.css">
+  
+  <script defer src="js/face-api.min.js"></script>
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  
+  <video id="background-video" autoplay loop muted>
+    <source src="videos/Golden Revolving Stage Animated Looped Video Background.mp4" type="video/mp4">
+  </video>
+
+  <button class="back-button" onclick="window.location.href='face.html'">Back</button>
+
+  <section id="face-detection" class="face-detection">
+    <div class="container">
+      <div class="text-content" style="margin-top: 65px;">
+        <h2>Real-Time Face & Emotion Detection</h2>
+        <p>Our AI-powered tool analyzes your facial expressions to determine your mood—whether happy, sad, or surprised. Based on your emotion, we’ll provide you with special offers for 5-star hotels in Sri Lanka. Activate your webcam and experience personalized offers today!</p>
+      </div>
+
+      <div class="video-container" style="margin-top: 13px;">
+        <video id="video" width="500" height="300" autoplay muted style="margin-top: 17px;"></video>
+        <h1 id="faceapi">Initializing...</h1>
+      </div>
+
+      <div class="center-button">
+        <button id="detectButton" type="button" class="button-big" style="margin-top: 18px;">
+          <span class="inner">Start Face Detection</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div id="offerCard" class="offer-card">
+    <div class="card-content">
+      <h2 id="offerTitle"></h2>
+      <p id="offerMessage"></p>
+      <button class="close-button" onclick="closeOffer()">Close</button>
+    </div>
+  </div>
+
+</body>
+</html>
