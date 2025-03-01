@@ -105,3 +105,80 @@
         font-size: 0.9rem; /* Even smaller font size for very small screens */
     }
 }
+
+
+
+
+
+
+#cardsec{
+    background-color: aliceblue;
+}
+
+/* cards  */
+        /* Destination Cards Section Styling */
+        .destination-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+            gap: 20px; /* Space between cards */
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto; /* Center the grid */
+        }
+
+        .card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: block; /* Ensure the <a> tag behaves like a block element */
+            text-decoration: none; /* Remove underline from links */
+            color: inherit; /* Inherit text color */
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px; /* Fixed height for uniformity */
+            object-fit: cover; /* Ensures the image covers the card */
+            display: block;
+        }
+
+        .card h3 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px;
+            margin: 0;
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay for text */
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px); /* Lift card on hover */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .card:hover h3 {
+            background: rgba(0, 0, 0, 0.9); /* Darker overlay on hover */
+        }
+
+        @media (max-width: 768px) {
+            .destination-cards {
+                grid-template-columns: 1fr; /* 2 columns for tablets */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .destination-cards {
+                grid-template-columns: 1fr; /* 1 column for mobile phones */
+            }
+
+            .card h3 {
+                font-size: 1.2rem; /* Smaller text for mobile */
+            }
+        }

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/headerandfooter.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
   <link rel="stylesheet" href="css/destination.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
 </head>
 
@@ -38,7 +39,6 @@
 
 
 
-
 <!-- Destination Welcome Section -->
 <section class="destination-welcome">
     <div class="destination-overlay"></div> <!-- Dark overlay for better text visibility -->
@@ -50,18 +50,54 @@
             <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" class="sparkle">
                 <path d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z"></path>
             </svg>
-            <span class="text"><a href="#provinces">Explore Provinces</a></span>
+            <span class="text"><a href="#cardsec">Explore Provinces</a></span>
         </button>
     </div>
 </section>
   
-  
-  
 
+<!-- Destination Cards Section -->
+ <div id="cardsec">
+<section class="destination-cards">
+    <a href="western.html" class="card" data-aos="fade-right" data-aos-delay="50">
+        <img src="img/1311.jpg" alt="Western Province">
+        <h3>Western Province</h3>
+    </a>
+    <a href="central.html" class="card" data-aos="fade-left" data-aos-delay="100">
+        <img src="img/kandy2.jpg" alt="Central Province">
+        <h3>Central Province</h3>
+    </a>
+    <a href="southern.html" class="card" data-aos="fade-up" data-aos-delay="150">
+        <img src="img/backforgall.jpg" alt="Southern Province">
+        <h3>Southern Province</h3>
+    </a>
+    <a href="northern.html" class="card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="img/north.jpg" alt="Northern Province">
+        <h3>Northern Province</h3>
+    </a>
+    <a href="eastern.html" class="card" data-aos="flip-left" data-aos-delay="250">
+        <img src="img/19.jpg" alt="Eastern Province">
+        <h3>Eastern Province</h3>
+    </a>
+    <a href="north-central.html" class="card" data-aos="flip-right" data-aos-delay="300">
+        <img src="img/21.jpg" alt="North Central Province">
+        <h3>North Central Province</h3>
+    </a>
+    <a href="north-western.html" class="card" data-aos="fade-right" data-aos-delay="350">
+        <img src="img/15.jpg" alt="North Western Province">
+        <h3>North Western Province</h3>
+    </a>
+    <a href="uva.html" class="card" data-aos="fade-left" data-aos-delay="400">
+        <img src="img/badulla.jpg" alt="Uva Province">
+        <h3>Uva Province</h3>
+    </a>
+    <a href="sabaragamuwa.html" class="card" data-aos="fade-up" data-aos-delay="450">
+        <img src="img/saba2.jpg" alt="Sabaragamuwa Province">
+        <h3>Sabaragamuwa Province</h3>
+    </a>
+</section>
 
-
-
-
+</div>
 
 <!-- footer -->
 <footer class="footer">
@@ -120,7 +156,16 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
   <script src="js/headerandfooter.js"></script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  
+  <script>
+   AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        easing: 'ease-in-out', // Easing type
+        once: false, // Allow animations to happen every time the element is scrolled into view
+        mirror: true, // Enable animations on scroll up
+        delay: 50, // Default delay for all animations
+    });
+</script>
 
 </body>
 
