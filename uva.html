@@ -12,6 +12,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/uva.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     
 </head>
@@ -24,7 +25,7 @@
       <img src="img/last final logo.png" alt="Logo" class="logo">
       <ul id="nav-menu">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">Chat With Mira</a></li>
+        <li><a href="aibot.html">Chat With Mira</a></li>
         <li><a href="destination.html">Destinations</a></li>
         <li><a href="#">Hotels</a></li>
         <li><a href="#">Shopping Malls</a></li>
@@ -68,7 +69,7 @@
       <div class="district-card" data-aos="fade-left">
         <img src="img/badulla.jpg" alt="Badulla">
         <h3>Badulla</h3>
-        <a href="badulla.html">Explore Badulla</a>
+        <a href="#badullasec">Explore Badulla</a>
       </div>
     </div>
   </section>
@@ -78,20 +79,24 @@
 
 
 
-
+<!-- MAIN DISTRIC TOPPI START -->
 <div id="monaragalasec"></div>
 <section class="monaragala-section" style=" background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
                 url('img/21.jpg') center/cover no-repeat;">
     <h2 data-aos="fade-right">Monaragala District</h2>
     <p data-aos="fade-left">Explore the stunning landscapes and cultural heritage of Monaragala.</p>
 </section>
+<!-- MAIN DISTRIC TOPPI END -->
+
 
 <!-- One Destination - Biso Pokuna -->
+ <!-- one destination START -->
+
 <section class="destination-section">
     <div class="container">
  
         <div class="content-section">
-            <h2 data-aos="fade-right">Biso Pokuna</h2>
+            <h2 data-aos="fade-right">1. Biso Pokuna</h2>
             <p data-aos="fade-right">
                 Biso Pokuna is an ancient royal bathing pond located in the majestic ruins of the Sigiriya complex in Sri Lanka. 
                 Believed to have been used by Queen Kassapa’s consorts, this pond is an extraordinary example of ancient hydro-engineering.
@@ -121,6 +126,502 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7804635081634!2d81.38492957575569!3d6.916829993082771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae45127b2574d4f%3A0xe5aca70effa4ec6a!2zR2FsYWJlZGRhIEJpc28gUG9uZCDgtpzgtr3gtrbgt5Dgtq_gt4rgtq8g4La24LeS4LeD4LedIOC2tOC3nOC2muC3lOC2qw!5e0!3m2!1sen!2slk!4v1740920563880!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </section>
+
+
+<section class="gallery-section" id="gallery">
+    <h2>Gallery</h2>
+    <!-- Swiper Container -->
+    <div class="swiper gallery-container" data-aos="fade-up">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide gallery-item">
+                <img src="img/35.jpg" alt="Scenic View" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/36.jpg" alt="Sunset in Sri Lanka" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/37.jpg" alt="Historical Site" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/38.jpg" alt="Beautiful Landscape" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/39.jpg" alt="Waterfall in Sri Lanka" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/41.jpg" alt="Cultural Festival" onclick="openLightbox(this)">
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" class="lightbox-img">
+</div>
+
+
+<!-- one destination END -->
+
+
+
+
+
+
+
+
+<!-- One Destination - Biso Pokuna -->
+ <!-- one destination START -->
+  
+ <section class="destination-section">
+    <div class="container">
+        <div class="content-section">
+            <h2 data-aos="fade-right">2. Dematamal Viharaya</h2>
+            <p data-aos="fade-right">
+                Dematamal Viharaya is a serene and ancient Buddhist temple located in the Monaragala district of Sri Lanka. 
+                Known for its tranquil atmosphere and historical significance, this temple is a hidden gem for those seeking spiritual solace and cultural exploration.
+            </p>
+            <p data-aos="fade-right">
+                The temple is believed to have been established during the reign of King Saddhatissa, a prominent ruler of the Anuradhapura Kingdom. 
+                It features ancient stupas, rock inscriptions, and a peaceful environment surrounded by lush greenery, making it a perfect destination for meditation and reflection.
+            </p>
+
+            <div class="button" data-aos="fade-left">
+                <a href="#galleryd">Gallery</a>
+            </div>
+
+            <div class="social" data-aos="fade-left">
+                <a href="https://www.youtube.com/channel/UC2d1tZA9WUaHGFVV8kN8Kpw" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/minindu-alwis/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/minidualwis/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="image-section">
+            <img src="img/56.jpg" alt="Dematamal Viharaya" data-aos="fade-up">
+        </div>
+    </div>
+
+    <div class="map-section" data-aos="fade-up">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.1300527923468!2d81.2880131!3d6.7539904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae44683ad6b5d93%3A0x361b278f6d95477f!2zRGVtYXRhbWFsIFZpaGFyYXlhfCDgtq_gt5ngtrjgtqfgtrjgtr3gt4og4LeA4LeS4LeE4LeP4La74La6!5e0!3m2!1sen!2slk!4v1740922646681!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+
+<section class="gallery-section" id="galleryd">
+    <h2>Gallery</h2>
+    <!-- Swiper Container -->
+    <div class="swiper gallery-container" data-aos="fade-up">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide gallery-item">
+                <img src="img/57.jpg" alt="Scenic View" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/58.jpg" alt="Sunset in Sri Lanka" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/59.jpg" alt="Historical Site" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/60.jpg" alt="Beautiful Landscape" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/61.jpg" alt="Waterfall in Sri Lanka" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/62.jpg" alt="Cultural Festival" onclick="openLightbox(this)">
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" class="lightbox-img">
+</div>
+
+
+<!-- one destination END -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- One Destination - Biso Pokuna -->
+ <!-- one destination START -->
+  
+ <section class="destination-section">
+    <div class="container">
+        <div class="content-section">
+            <h2 data-aos="fade-right">3. Kataragama Kirivehera</h2>
+            <p data-aos="fade-right">
+                Kataragama Kirivehera is a sacred Buddhist stupa located in the holy town of Kataragama in Sri Lanka. 
+                It is one of the 16 most important pilgrimage sites (Solosmasthana) in the country and holds immense religious significance for Buddhists.
+            </p>
+            <p data-aos="fade-right">
+                The stupa is believed to have been built by King Mahasena during the 3rd century BCE. 
+                It is renowned for its unique cylindrical shape and is surrounded by a serene atmosphere, making it a popular destination for pilgrims and tourists alike.
+            </p>
+
+            <div class="button" data-aos="fade-left">
+                <a href="#galleryk">Gallery</a>
+            </div>
+
+            <div class="social" data-aos="fade-left">
+                <a href="https://www.youtube.com/channel/UC2d1tZA9WUaHGFVV8kN8Kpw" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/minindu-alwis/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/minidualwis/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="image-section">
+            <img src="img/42.jpg" alt="Kataragama Kirivehera" data-aos="fade-up">
+        </div>
+    </div>
+
+    <div class="map-section" data-aos="fade-up">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.766953798158!2d81.3297351757521!3d6.423981493567023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae425fc65565177%3A0x7051c580411b53f0!2sKiri%20Vehera%20Temple!5e0!3m2!1sen!2slk!4v1740923012802!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+
+<section class="gallery-section" id="galleryk">
+    <h2>Gallery</h2>
+    <!-- Swiper Container -->
+    <div class="swiper gallery-container" data-aos="fade-up">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide gallery-item">
+                <img src="img/42.jpg" alt="Scenic View" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/43.jpg" alt="Sunset in Sri Lanka" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/44.jpg" alt="Historical Site" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/45.jpg" alt="Beautiful Landscape" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/46.jpg" alt="Waterfall in Sri Lanka" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/44.jpg" alt="Cultural Festival" onclick="openLightbox(this)">
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" class="lightbox-img">
+</div>
+
+
+<!-- one destination END -->
+
+
+
+
+
+
+
+<!-- MAIN DISTRIC TOPPI START -->
+<div id="badullasec"></div>
+<section class="monaragala-section" style=" background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('img/24.jpg') center/cover no-repeat;">
+    <h2 data-aos="fade-right">Badulla District</h2>
+    <p data-aos="fade-left">Explore the stunning landscapes and cultural heritage of Badulla.</p>
+</section>
+<!-- MAIN DISTRIC TOPPI END -->
+
+
+
+
+
+
+
+<!-- One Destination - Biso Pokuna -->
+ <!-- one destination START -->
+  
+ <section class="destination-section">
+    <div class="container">
+        <div class="content-section">
+            <h2 data-aos="fade-right">4. Nine Arch Bridge</h2>
+            <p data-aos="fade-right">
+                The Nine Arch Bridge, also known as the Bridge in the Sky, is a stunning architectural marvel located in Ella, Sri Lanka. 
+                Built during the British colonial era, this bridge is a testament to the engineering brilliance of the early 20th century.
+            </p>
+            <p data-aos="fade-right">
+                Surrounded by lush greenery and tea plantations, the Nine Arch Bridge is a popular tourist attraction and a favorite spot for photography. 
+                The bridge is still in use today, and visitors can witness trains passing through this iconic structure while enjoying the breathtaking views of the surrounding landscape.
+            </p>
+
+            <div class="button" data-aos="fade-left">
+                <a href="#gallerya">Gallery</a>
+            </div>
+
+            <div class="social" data-aos="fade-left">
+                <a href="https://www.youtube.com/channel/UC2d1tZA9WUaHGFVV8kN8Kpw" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/minindu-alwis/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/minidualwis/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="image-section">
+            <img src="img/25.jpg" alt="Nine Arch Bridge" data-aos="fade-up">
+        </div>
+    </div>
+
+    <div class="map-section" data-aos="fade-up">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.2345678901234!2d81.12345678901234!3d6.876543210987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4612345678901%3A0xabcdef1234567890!2sNine%20Arch%20Bridge!5e0!3m2!1sen!2slk!4v1740920563880!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+<section class="gallery-section" id="gallerya">
+    <h2>Gallery</h2>
+    <!-- Swiper Container -->
+    <div class="swiper gallery-container" data-aos="fade-up">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide gallery-item">
+                <img src="img/20.jpg" alt="Scenic View" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/4.jpg" alt="Sunset in Sri Lanka" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/21.jpg" alt="Historical Site" onclick="openLightbox(this)">
+            </div>
+        
+            <div class="swiper-slide gallery-item">
+                <img src="img/24.jpg" alt="Waterfall in Sri Lanka" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/8000.jpg" alt="Cultural Festival" onclick="openLightbox(this)">
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" class="lightbox-img">
+</div>
+
+
+<!-- one destination END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- One Destination - Biso Pokuna -->
+ <!-- one destination START -->
+  
+ <section class="destination-section">
+    <div class="container">
+        <div class="content-section">
+            <h2 data-aos="fade-right">5. Ella, Sri Lanka</h2>
+            <p data-aos="fade-right">
+                Ella is a picturesque small town nestled in the Badulla District of Sri Lanka, known for its stunning landscapes, lush greenery, and cool climate. 
+                Surrounded by rolling hills, tea plantations, and waterfalls, Ella is a paradise for nature lovers and adventure seekers.
+            </p>
+            <p data-aos="fade-right">
+                Popular attractions in Ella include the Nine Arch Bridge, Little Adam's Peak, Ella Rock, and Ravana Falls. 
+                The town also offers a variety of hiking trails, cozy cafes, and breathtaking viewpoints, making it a must-visit destination for travelers.
+            </p>
+
+            <div class="button" data-aos="fade-left">
+                <a href="#gallerye">Gallery</a>
+            </div>
+
+            <div class="social" data-aos="fade-left">
+                <a href="https://www.youtube.com/channel/UC2d1tZA9WUaHGFVV8kN8Kpw" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/minindu-alwis/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/minidualwis/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="image-section">
+            <img src="img/110.jpg" alt="Ella, Sri Lanka" data-aos="fade-up">
+        </div>
+    </div>
+
+    <div class="map-section" data-aos="fade-up">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.2345678901234!2d81.12345678901234!3d6.876543210987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4612345678901%3A0xabcdef1234567890!2sElla%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1740920563880!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+<section class="gallery-section" id="gallerye">
+    <h2>Gallery</h2>
+    <!-- Swiper Container -->
+    <div class="swiper gallery-container" data-aos="fade-up">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide gallery-item">
+                <img src="img/111.jpg" alt="Scenic View" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/112.jpg" alt="Sunset in Sri Lanka" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/113.jpg" alt="Historical Site" onclick="openLightbox(this)">
+            </div>
+        
+            <div class="swiper-slide gallery-item">
+                <img src="img/114.jpg" alt="Waterfall in Sri Lanka" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/110.jpg" alt="Cultural Festival" onclick="openLightbox(this)">
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" class="lightbox-img">
+</div>
+
+
+<!-- one destination END -->
+
+
+
+
+
+
+
+<!-- One Destination - Biso Pokuna -->
+ <!-- one destination START -->
+  
+ <section class="destination-section">
+    <div class="container">
+        <div class="content-section">
+            <h2 data-aos="fade-right">6. Dunhinda Falls</h2>
+            <p data-aos="fade-right">
+                Dunhinda Falls is one of the most beautiful and iconic waterfalls in Sri Lanka, located near the town of Badulla. 
+                Known for its majestic beauty and the misty spray that surrounds it, Dunhinda Falls is a must-visit destination for nature lovers and photographers.
+            </p>
+            <p data-aos="fade-right">
+                The waterfall cascades from a height of 64 meters (210 feet) and is surrounded by lush greenery, creating a picturesque and serene environment. 
+                The name "Dunhinda" translates to "spraying waterfall," which perfectly describes the misty spray that can be seen from a distance.
+            </p>
+
+            <div class="button" data-aos="fade-left">
+                <a href="#gallerydu">Gallery</a>
+            </div>
+
+            <div class="social" data-aos="fade-left">
+                <a href="https://www.youtube.com/channel/UC2d1tZA9WUaHGFVV8kN8Kpw" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/minindu-alwis/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/minidualwis/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="image-section">
+            <img src="img/2.jpg" alt="Dunhinda Falls" data-aos="fade-up">
+        </div>
+    </div>
+
+    <div class="map-section" data-aos="fade-up">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.895364624545!2d81.0579563257565!3d7.021584342980088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae489128c5dab27%3A0x6ba769480f37b6fa!2sDunhinda%20Waterfall!5e0!3m2!1sen!2slk!4v1740924400798!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+<section class="gallery-section" id="gallerydu">
+    <h2>Gallery</h2>
+    <!-- Swiper Container -->
+    <div class="swiper gallery-container" data-aos="fade-up">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide gallery-item">
+                <img src="img/3.jpg" alt="Scenic View" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/4.jpg" alt="Sunset in Sri Lanka" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/5.jpg" alt="Historical Site" onclick="openLightbox(this)">
+            </div>
+        
+            <div class="swiper-slide gallery-item">
+                <img src="img/6.jpg" alt="Waterfall in Sri Lanka" onclick="openLightbox(this)">
+            </div>
+            <div class="swiper-slide gallery-item">
+                <img src="img/1.jpg" alt="Cultural Festival" onclick="openLightbox(this)">
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" class="lightbox-img">
+</div>
+
+
+<!-- one destination END -->
+
+
+
+
+
 
 
 
@@ -193,6 +694,7 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
   <script src="js/headerandfooter.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
    AOS.init({
         duration: 1000, 
@@ -207,6 +709,51 @@
         behavior: 'smooth'
       });
     }
+
+const swiper = new Swiper('.gallery-container', {
+    loop: true,
+    slidesPerView: 1, 
+    spaceBetween: 10, 
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        
+        768: {
+            slidesPerView: 2, 
+        },
+        1024: {
+            slidesPerView: 3, 
+        },
+    },
+});
+
+
+function openLightbox(img) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    lightbox.style.display = 'flex';
+    lightboxImg.src = img.src;
+}
+
+
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none';
+}
+
+
+document.addEventListener('click', function (event) {
+    const lightbox = document.getElementById('lightbox');
+    if (event.target === lightbox) {
+        lightbox.style.display = 'none';
+    }
+});
 </script>
 
 </body>
