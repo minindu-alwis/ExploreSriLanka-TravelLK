@@ -1,0 +1,211 @@
+/* Welcome Section */
+.welcome-section {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .welcome-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Darker overlay for better contrast */
+  }
+  
+  .welcome-content {
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Ensures text inside is centered */
+  }
+  
+  .welcome-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1.5s ease-in-out;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .welcome-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1.5s ease-in-out;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .welcome-content .btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: white;
+    background: #ff6f61;
+    border: none;
+    border-radius: 30px; /* Rounded button */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .welcome-content .btn:hover {
+    background: #ff4a3d;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Districts Section */
+  .districts-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f9f9f9;
+  }
+  
+  .districts-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .district-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .district-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .district-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .district-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .district-card h3 {
+    font-size: 1.8rem;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  .district-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff6f61;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background 0.3s ease;
+  }
+  
+  .district-card a:hover {
+    background: #ff4a3d;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .welcome-content h1 {
+      font-size: 3rem;
+    }
+  
+    .welcome-content p {
+      font-size: 1.2rem;
+    }
+  
+    .welcome-content .btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  
+    .district-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .district-card {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .welcome-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .welcome-content p {
+      font-size: 1rem;
+    }
+  
+    .welcome-content .btn {
+      padding: 8px 16px;
+      font-size: 0.8rem;
+    }
+  
+    .district-card h3 {
+      font-size: 1.5rem;
+    }
+  
+    .district-card a {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=\, initial-scale=1.0">
+  <title>Travel - LK 😍</title>
+  <link rel="stylesheet" href="css/aibot.css">
+  <link rel="stylesheet" href="css/headerandfooter.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="stylesheet" href="css/destination.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/uva.css">
+    
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <img src="img/last final logo.png" alt="Logo" class="logo">
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Chat With Mira</a></li>
+        <li><a href="destination.html">Destinations</a></li>
+        <li><a href="#">Hotels</a></li>
+        <li><a href="#">Shopping Malls</a></li>
+        <li><a href="weather.html">Live Weather</a></li>
+        <li><a href="face.html">Offer</a></li>
+        <li class="search">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </li>
+      </ul>
+      <div class="hamburger" id="hamburger-menu">
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+<!-- Welcome Section -->
+<section class="welcome-section" style="background-image: url('img/aliya.jpg');">
+    <div class="welcome-content">
+      <h1>Welcome To Uva Province</h1>
+      <p>Discover the beauty and culture of Uva Province</p>
+      <button class="btn" onclick="scrollToDistricts()">Select District</button>
+    </div>
+  </section>
+
+  <!-- Districts Section -->
+  <section class="districts-section">
+    <h2>Districts of Uva Province</h2>
+    <div class="district-cards">
+      <!-- Monaragala District Card -->
+      <div class="district-card" data-aos="fade-right">
+        <img src="img/53.jpg" alt="Monaragala">
+        <h3>Monaragala</h3>
+        <a href="monaragala.html">Explore Monaragala</a>
+      </div>
+
+      <!-- Badulla District Card -->
+      <div class="district-card" data-aos="fade-left">
+        <img src="img/badulla.jpg" alt="Badulla">
+        <h3>Badulla</h3>
+        <a href="badulla.html">Explore Badulla</a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+<!-- footer -->
+<footer class="footer">
+  <div class="footer-container">
+      <!-- Logo Section -->
+      <div class="footer-section logo-section">
+          <img src="img/last final logo.png" alt="Travel Lk Logo" class="footer-logo">
+          <p>Your gateway to unforgettable travel experiences. Explore the world with Travel Lk!</p>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">AI Assistant</a></li>
+              <li><a href="#">Destinations</a></li>
+              <li><a href="#">Hotels</a></li>
+              <li><a href="#">Shopping Malls</a></li>
+              <li><a href="#">Live Museum</a></li>
+          </ul>
+      </div>
+
+      <!-- Contact Info Section -->
+      <div class="footer-section">
+          <h3>Contact Info</h3>
+          <ul>
+              <li><img src="img/location.png" alt="Location Icon" class="footer-icon"> Colombo , Sri Lanka</li>
+              <li><img src="img/cll.png" alt="Phone Icon" class="footer-icon"> +94 71 1816 134</li>
+              <li><img src="img/mail.png" alt="Email Icon" class="footer-icon"> info@travellk.com</li>
+          </ul>
+      </div>
+
+      <!-- Social Media Section -->
+      <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+              <a href="#"><img src="img/fb.png" alt="Facebook" class="social-icon"></a>
+              <a href="#"><img src="img/twiter.png" alt="Twitter" class="social-icon"></a>
+              <a href="#"><img src="img/insta.png" alt="Instagram" class="social-icon"></a>
+              <a href="#"><img src="img/linkedin.png" alt="LinkedIn" class="social-icon"></a>
+              <a href="#"><img src="img/yituube.png" alt="Youtube" class="social-icon"></a>
+          </div>
+      </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+      <p>&copy; 2019 Travel Lk. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/markdown-it/8.2.2/markdown-it.min.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="js/headerandfooter.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  
+  <script>
+   AOS.init({
+        duration: 1000, 
+        easing: 'ease-in-out',
+        once: false, 
+        mirror: true, 
+        delay: 50, 
+    });
+
+    function scrollToDistricts() {
+      document.querySelector('.districts-section').scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+</script>
+
+</body>
+
+</html>
