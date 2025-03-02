@@ -209,3 +209,170 @@
       opacity: 1;
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+  /* mobaragala section css */
+  /* Full-Width Section */
+.destination-section {
+    width: 100%;
+    background: #f9f9f9;
+    padding: 50px 0;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+}
+
+
+.content-section {
+    flex: 1;
+    padding: 30px;
+}
+
+.content-section h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.content-section p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Centered Button */
+.button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button a {
+    display: inline-block;
+    background: #ff5733;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.button a:hover {
+    background: #e64a19;
+}
+
+
+.social {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social a {
+    font-size: 20px;
+    color: #555;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #ff5733;
+}
+
+
+.image-section {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.map-section {
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.map-section iframe {
+    width: 90%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .map-section iframe {
+        height: 300px;
+    }
+}
+
+
+.monaragala-section {
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+}
+
+.monaragala-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.monaragala-section p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* 🌍 Responsive */
+@media (max-width: 768px) {
+    .monaragala-section {
+        padding: 60px 15px;
+    }
+
+    .monaragala-section h2 {
+        font-size: 28px;
+    }
+
+    .monaragala-section p {
+        font-size: 18px;
+    }
+}
