@@ -1,0 +1,146 @@
+/* Shopping Welcome Section */
+.shopping-welcome {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .shopping-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .shopping-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .shopping-content {
+    z-index: 1;
+  }
+  
+  .shopping-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .shopping-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .explore-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .explore-button:hover {
+    background: #ff4a3d;
+  }
+  
+  /* Shopping Cards Section */
+  .shopping-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background: #f9f9f9;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 22%;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 20px;
+  }
+  
+  .card .btn {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: #ff6f61;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .card .btn:hover {
+    background: #ff4a3d;
+  }
+  
+  /* Mall Detail Section */
+  .mall-detail {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .mall-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .mall-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .mall-content img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .mall-content p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
