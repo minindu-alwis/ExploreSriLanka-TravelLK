@@ -216,7 +216,6 @@ ExploreSriLanka-TravelLK/
 | **3D Museums** | ❌ Basic galleries | ✅ Immersive 3D experience |
 | **Weather Integration** | ❌ External links | ✅ Real-time updates |
 | **District Organization** | ❌ Random listing | ✅ Systematic categorization |
-| **Mobile Experience** | ❌ Desktop-focused | ✅ Mobile-first design |
 | **Cultural Depth** | ❌ Surface-level | ✅ Deep cultural immersion |
 
 </div>
