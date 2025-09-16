@@ -15,11 +15,11 @@
 
 ---
 
-## 🎯 **What Makes This Special?**
+## 🎯🎯🎯🎯 **What Makes This Special?**
 
 > *This isn't just another travel website - it's a revolutionary platform that combines cutting-edge technology with the breathtaking beauty of Sri Lanka to create an unforgettable digital journey.*
 
-### 🚀 **The Magic Behind ExploreSriLanka**
+### 🚀🚀🚀🚀 **The Magic Behind ExploreSriLanka**
 
 ```
 🏛️ IMMERSIVE 3D MUSEUMS → Step into virtual galleries
