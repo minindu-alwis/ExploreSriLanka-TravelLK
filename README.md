@@ -70,7 +70,7 @@
 </td>
 <td width="50%">
 
-### 🤖 **Mira AI Assistant**
+### 🤖🤖🤖🤖🤖🤖 **Mira AI Assistant**
 - **Personalized recommendations** based on preferences
 - **Real-time trip planning** with optimal routes
 - **Weather-aware suggestions** for activities
@@ -97,7 +97,7 @@
 
 ---
 
-## 🚀 **Quick Start Guide**
+## 🚀🚀🚀🚀 **Quick Start Guide**
 
 ### 🔧 **Installation & Setup**
 
@@ -133,20 +133,20 @@ ExploreSriLanka-TravelLK/
 
 ---
 
-## 🎮 **Interactive Features Demo**
+## 🎮🎮🎮 **Interactive Features Demo**
 
 <div align="center">
 
-### 🌦️ **Real-Time Weather Integration**
+### 🌦️🌦️🌦️ **Real-Time Weather Integration**
 *Get live weather updates for any destination in Sri Lanka*
 
-### 🤖 **Meet Mira - Your AI Travel Companion**
+### 🤖🤖🤖 **Meet Mira - Your AI Travel Companion**
 *Ask anything about Sri Lankan travel and get instant, personalized responses*
 
-### 🏛️ **Virtual 3D Museum Experience**
+### 🏛️🏛️🏛️ **Virtual 3D Museum Experience**
 *Explore Sri Lankan culture and art in stunning 3D environments*
 
-### 📱 **Mobile-Responsive Design**
+### 📱📱📱 **Mobile-Responsive Design**
 *Perfect experience across all devices - phone, tablet, desktop*
 
 </div>
@@ -204,7 +204,7 @@ ExploreSriLanka-TravelLK/
 
 ---
 
-## 🏆 **Why Choose ExploreSriLanka?**
+## 🏆🏆🏆 **Why Choose ExploreSriLanka?**
 
 <div align="center">
 
@@ -222,11 +222,11 @@ ExploreSriLanka-TravelLK/
 
 ---
 
-## 🤝 **Contributing to the Journey**
+## 🤝🤝🤝 **Contributing to the Journey**
 
 We welcome contributors who share our passion for showcasing Sri Lanka's beauty! 
 
-### 💡 **Ideas for Contributions**
+### 💡💡💡 **Ideas for Contributions**
 
 - 🏨 Add new hotel recommendations
 - 🏞️ Include more destinations and attractions
@@ -288,7 +288,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 <div align="center">
 
-### 🌺 **Made with ❤️ for Sri Lanka** 🏝️
+### 🌺 **Made with ❤️❤️❤️ for Sri Lanka** 🏝️
 
 *Showcasing the Pearl of the Indian Ocean through cutting-edge technology*
 
