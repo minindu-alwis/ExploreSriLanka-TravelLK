@@ -282,7 +282,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - **🎨 Open Source Community** for amazing tools and libraries
 - **📷 Photographers** who captured Sri Lanka's beauty
 - **🤖 AI Technologies** that power our intelligent features
-- **💻 Contributors** who help make this project amazing
+- **💻💻 Contributors** who help make this project amazing 💻💻
 
 ---
 
