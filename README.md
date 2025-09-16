@@ -4,7 +4,7 @@
 
 ![Sri Lanka Banner](https://images.unsplash.com/photo-1566552881560-0be862a7c445?w=800&h=300&fit=crop&crop=center)
 
-### *Discover the Pearl of the Indian Ocean with Intelligence* ✨
+### *Discover the Pearl of the Indian Ocean with Intelligence* ✨✨✨✨
 
 [![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Now-4CAF50?style=for-the-badge&logoColor=white)](https://minindu-alwis.github.io/ExploreSriLanka-TravelLK/)
 [![GitHub Stars](https://img.shields.io/github/stars/minindu-alwis/ExploreSriLanka-TravelLK?style=for-the-badge&logo=github&color=gold)](https://github.com/minindu-alwis/ExploreSriLanka-TravelLK/stargazers)
