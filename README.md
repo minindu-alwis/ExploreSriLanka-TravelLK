@@ -302,6 +302,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ---
 
-*© 2024 ExploreSriLanka - Bringing Sri Lankan beauty to the digital world*
+*© 2019 ExploreSriLanka - Bringing Sri Lankan beauty to the digital world*
 
 </div>
