@@ -1,4 +1,4 @@
-# 🌺 ExploreSriLanka - TravelLK 🏝️
+# 🌺 ExploreSriLanka - TravelLK.lk 🏝️
 
 <div align="center">
 
